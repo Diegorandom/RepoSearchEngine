@@ -10,13 +10,7 @@ export class CommentsService {
 
   getComments(name: string, owner: string) {
     return this.http
-      .get(
-        "https://api.github.com/repos/" +
-          owner +
-          "/" +
-          name +
-          "/issues/comments"
-      )
+      .get(`https://api.github.com/repos/${owner}/${name}/issues/comments`)
       .pipe(
         map((response: Response) => {
           const comments = response.json();
