@@ -2,7 +2,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
-import { HttpModule } from "../../node_modules/@angular/http";
+import { HttpModule } from "@angular/http";
 import { AccordionModule } from "ngx-bootstrap/accordion";
 
 @NgModule({
