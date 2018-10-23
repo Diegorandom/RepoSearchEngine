@@ -15,7 +15,7 @@ export class CommentsService {
           owner +
           "/" +
           name +
-          "/issues/5/comments"
+          "/issues/comments"
       )
       .pipe(
         map((response: Response) => {
